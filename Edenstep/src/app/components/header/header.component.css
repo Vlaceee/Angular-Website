@@ -1,0 +1,84 @@
+/* Container for the menu */
+
+:host{
+    display:flex;
+    width:100%;
+    height:clamp(5vh,70px,10vh);
+  
+    flex-grow: 1;
+
+}
+.menu-container {
+    position:fixed;
+    box-sizing: border-box;
+    width: 100%;
+    height:clamp(5vh,70px,10vh);
+    border: 2px solid var(--prettyblue, #0000ff);
+    background-color: var(--beige2, #f5f5dc);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1; /* so it covers the image*/
+}
+
+
+/* Title button (Edenstep) */
+.edenstep-title {
+    color: var(--prettyblue, #0000ff);
+    background: transparent;
+    font-family: serif;
+    font-size: clamp(1rem,2rem,4rem);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.edenstep-title:hover {
+    color: #2563eb;
+}
+
+/* Button container */
+.menu-buttons {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Roboto;
+}
+
+/* Individual menu buttons */
+.menu-item {
+    background-color: var(--prettyblue, #0000ff);
+    border: 2px solid black;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: clamp(0.5rem,14px,1.3rem);
+    white-space: nowrap;
+    
+}
+
+.menu-item:hover {
+    background-color: #2563eb;
+}
+
+/* Join the World button */
+.join-world {
+    background-color: var(--prettyblue, #0000ff);
+    border: 1px solid black;
+    color: white;
+    font-family: Roboto;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: clamp(0.6rem,16px,1.4rem);
+    border-radius:10px;
+}
+
+.join-world:hover {
+    background-color: #2563eb;
+}
+
+

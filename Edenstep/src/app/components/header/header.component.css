@@ -24,6 +24,7 @@
 
 /* Title button (Edenstep) */
 .edenstep-title {
+    max-width:8%;
     color: var(--prettyblue, #0000ff);
     background: transparent;
     font-family: serif;
@@ -40,15 +41,17 @@
 /* Button container */
 .menu-buttons {
     display: flex;
-    width: 40%;
+    width: 50%;
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: Roboto;
 }
 
 /* Individual menu buttons */
 .menu-item {
+    
+    
     background-color: var(--prettyblue, #0000ff);
     border: 2px solid black;
     color: white;
@@ -64,8 +67,40 @@
     background-color: #2563eb;
 }
 
+
+.character-button{
+    position:relative;
+    background-color: var(--plava);
+    border: 3px solid var(--prettyblue);
+    border-radius:15px;
+    color: white;
+    padding: 8px 16px;
+    padding-right:32px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: clamp(0.5rem,14px,1.3rem);
+    white-space: nowrap;
+    transition:background-color 0.3 ease border-color 0.3 ease ;
+}
+
+.character-button:hover{
+    background-color: rgb(255, 0, 89);
+    border-color: black;
+}
+
+.button-image{
+    position:absolute;
+    top:8px;
+    right:10px;
+    width:16px;
+    height:16px;
+
+}
+
+
 /* Join the World button */
 .join-world {
+    max-width:10%;
     background-color: var(--prettyblue, #0000ff);
     border: 1px solid black;
     color: white;

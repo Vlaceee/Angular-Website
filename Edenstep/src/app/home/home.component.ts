@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ContentBoxComponent } from "../componenents/content-box/content-box.component";
-
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',

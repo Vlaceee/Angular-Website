@@ -1,19 +1,23 @@
-
 <div class="menu-container">
-    <button class="edenstep-title" onclick="navigateTo('/')">{{title()}}</button>
+  <button class="edenstep-title" onclick="navigateTo('/')">
+    {{ title() }}
+  </button>
 
-    <div class="menu-buttons">
-        <button class="menu-item" onclick="navigateTo('/AboutPage')">About Page</button>
-        <button class="menu-item" onclick="navigateTo('/Adventures')">Adventures</button>
-        <button class="character-button" onClick="navigateTo('/CharacterCreation')">Make your Character<img class="button-image" src="/swords.png"></button>
-        <button class="menu-item" onclick="navigateTo('/WorldMap')">World Map</button>
-        <button class="menu-item" onclick="navigateTo('/Pantheon')">The Holy Pantheon</button>
-    </div>
+  <div class="menu-buttons">
+    <button class="menu-item" [routerLink]="'/'">About Page</button>
+    <button class="menu-item" onclick="navigateTo('/Adventures')">
+      Adventures
+    </button>
+    <button class="character-button" [routerLink]="'/character-creation'">
+      Make your Character<img class="button-image" src="/swords.png" />
+    </button>
+    <button class="menu-item" onclick="navigateTo('/WorldMap')">
+      World Map
+    </button>
+    <button class="menu-item" onclick="navigateTo('/Pantheon')">
+      The Holy Pantheon
+    </button>
+  </div>
 
-    <button class="join-world">Join the World</button>
+  <button class="join-world">Join the World</button>
 </div>
-
-
-
-
-

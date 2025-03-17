@@ -1,29 +1,28 @@
 <div class="header-container"></div>
 <div class="main-container">
-
-    <div class="image-container">
-      <img src="mainmenu.jpg" class="background-image"  />
-      <h1 class="image-text">A land where you are just one step away from Heaven</h1>
-    </div>
-    
-
-    <div class="image-space"></div>
-
-    <div class="main-content-container">
-      
-     <h1 class="main-title">Everything you need to know</h1>
-     <app-content-box
-     [imageUrl]="'/GodsOversee.jpg'"
-     [text1]="'Edenstep, a land shaped by the hands of the gods themselves, is a place where divine power pulses through the very earth. '"
-     [text2]="'Continent is a nexus of holy magic, where ancient prophecies speak of celestial beings walking among mortals.'"
-     [text3]="'The gods are never distant, their influence felt in every corner of the continent '"
-    
-     ></app-content-box>
-    </div>
-
-
-
-  
-
+  <div class="image-container">
+    <img src="mainmenu.jpg" class="background-image" />
+    <h1 class="image-text">
+      A land where you are just one step away from Heaven
+    </h1>
   </div>
 
+  <div class="image-space"></div>
+
+  <div class="main-content-container">
+    <h1 class="main-title">Everything you need to know</h1>
+    <app-content-box
+      [imageUrl]="'/GodsOversee.jpg'"
+      [text1]="
+        'Edenstep, a land shaped by the hands of the gods themselves, is a place where divine power pulses through the very earth. '
+      "
+      [text2]="
+        'Continent is a nexus of holy magic, where ancient prophecies speak of celestial beings walking among mortals.'
+      "
+      [text3]="
+        'The gods are never distant, their influence felt in every corner of the continent '
+      "
+      [reverseOrder]="true"
+    ></app-content-box>
+  </div>
+</div>

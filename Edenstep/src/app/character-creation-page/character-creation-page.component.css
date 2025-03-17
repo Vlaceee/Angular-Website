@@ -1,0 +1,29 @@
+:host {
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* this did it */
+  flex-grow: 1;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content-div {
+  flex-grow: 1;
+  background-color: var(--beige2);
+  display: flex;
+  flex-direction: row;
+  width: 100vw; /*for some reason this was taking it to half with 100%*/
+  height: 100%;
+  margin-top: 5px;
+}
+
+.header-container {
+  flex-grow: 1;
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 70px;
+  padding: 0px;
+  margin: 0px;
+}

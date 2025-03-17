@@ -1,119 +1,109 @@
 /* Container for the menu */
 
-:host{
-    display:flex;
-    width:100%;
-    height:clamp(5vh,70px,10vh);
-  
-    flex-grow: 1;
+:host {
+  display: flex;
+  width: 100%;
+  height: clamp(5vh, 70px, 10vh);
 
+  flex-grow: 1;
 }
 .menu-container {
-    position:fixed;
-    box-sizing: border-box;
-    width: 100%;
-    height:clamp(5vh,70px,10vh);
-    border: 2px solid var(--prettyblue, #0000ff);
-    background-color: var(--beige2, #f5f5dc);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 1; /* so it covers the image*/
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  height: clamp(5vh, 70px, 10vh);
+  border: 2px solid var(--prettyblue, #0000ff);
+  background-color: var(--beige2, #f5f5dc);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1; /* so it covers the image*/
 }
-
 
 /* Title button (Edenstep) */
 .edenstep-title {
-    max-width:8%;
-    color: var(--prettyblue, #0000ff);
-    background: transparent;
-    font-family: serif;
-    font-size: clamp(1rem,2rem,4rem);
-    border: none;
-    cursor: pointer;
-    transition: color 0.3s;
+  max-width: 8%;
+  color: var(--prettyblue, #0000ff);
+  background: transparent;
+  font-family: serif;
+  font-size: clamp(1rem, 2rem, 4rem);
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
 }
 
 .edenstep-title:hover {
-    color: #2563eb;
+  color: #2563eb;
 }
 
 /* Button container */
 .menu-buttons {
-    display: flex;
-    width: 50%;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Roboto;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
 }
 
 /* Individual menu buttons */
 .menu-item {
-    
-    
-    background-color: var(--prettyblue, #0000ff);
-    border: 2px solid black;
-    color: white;
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: clamp(0.5rem,14px,1.3rem);
-    white-space: nowrap;
-    
+  background-color: var(--prettyblue, #0000ff);
+  border: 2px solid black;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: clamp(0.5rem, 14px, 1.3rem);
+  white-space: nowrap;
 }
 
 .menu-item:hover {
-    background-color: #2563eb;
+  background-color: #2563eb;
 }
 
-
-.character-button{
-    position:relative;
-    background-color: var(--plava);
-    border: 3px solid var(--prettyblue);
-    border-radius:15px;
-    color: white;
-    padding: 8px 16px;
-    padding-right:32px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: clamp(0.5rem,14px,1.3rem);
-    white-space: nowrap;
-    transition:background-color 0.3 ease border-color 0.3 ease ;
+.character-button {
+  position: relative;
+  background-color: var(--plava);
+  border: 3px solid var(--prettyblue);
+  border-radius: 15px;
+  color: white;
+  padding: 8px 16px;
+  padding-right: 32px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: clamp(0.5rem, 14px, 1.3rem);
+  white-space: nowrap;
+  transition: background-color 0.2 ease border-color 0.3 ease;
 }
 
-.character-button:hover{
-    background-color: rgb(255, 0, 89);
-    border-color: black;
+.character-button:hover {
+  background-color: rgb(255, 0, 89);
+  border-color: black;
 }
 
-.button-image{
-    position:absolute;
-    top:8px;
-    right:10px;
-    width:16px;
-    height:16px;
-
+.button-image {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
 }
-
 
 /* Join the World button */
 .join-world {
-    max-width:10%;
-    background-color: var(--prettyblue, #0000ff);
-    border: 1px solid black;
-    color: white;
-    font-family: Roboto;
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: clamp(0.6rem,16px,1.4rem);
-    border-radius:10px;
+  max-width: 10%;
+  background-color: var(--prettyblue, #0000ff);
+  border: 1px solid black;
+  color: white;
+  font-family: Roboto;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: clamp(0.6rem, 16px, 1.4rem);
+  border-radius: 10px;
 }
 
 .join-world:hover {
-    background-color: #2563eb;
+  background-color: #2563eb;
 }
-
-

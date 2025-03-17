@@ -1,27 +1,24 @@
 import { Component, input } from '@angular/core';
+import { CommonModule, NgClass } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { Input } from '@angular/core';
 import { signal } from '@angular/core';
 
-
 @Component({
   selector: 'app-content-box',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './content-box.component.html',
-  styleUrl: './content-box.component.css'
+  styleUrl: './content-box.component.css',
 })
 export class ContentBoxComponent {
-  nekitext=signal('Hej neki tekst');
-  nekiinput=input('hej');
-  @Input() imageUrl: string = '';  // Input for the image URL
+  @Input() imageUrl: string = ''; // Input for the image URL
   @Input() text1: string = '';
   @Input() text2: string = '';
   @Input() text3: string = '';
+  @Input() reverseOrder: boolean = false;
 
-  
-
-  constructor()
-  {
-    console.log("it is made!");
+  constructor() {
+    console.log('it is made!');
   }
 
   ngOnInit(): void {
@@ -31,5 +28,4 @@ export class ContentBoxComponent {
     console.log('text2:', this.text2);
     console.log('text3:', this.text3);
   }
-
 }

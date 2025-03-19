@@ -1,0 +1,3 @@
+Solo project in which i make a website for my homebrew fantasy world Edenstep. Created using Angular. Building in progress...
+
+

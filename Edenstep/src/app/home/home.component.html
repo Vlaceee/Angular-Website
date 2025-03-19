@@ -12,6 +12,7 @@
   <div class="main-content-container">
     <h1 class="main-title">Everything you need to know</h1>
     <app-content-box
+      [imageName]="'Mercy Goodess of Peace and Prosperity'"
       [imageUrl]="'/GodsOversee.jpg'"
       [text1]="
         'Edenstep, a land shaped by the hands of the gods themselves, is a place where divine power pulses through the very earth. '
@@ -22,7 +23,37 @@
       [text3]="
         'The gods are never distant, their influence felt in every corner of the continent '
       "
-      [reverseOrder]="true"
+      [reverseOrder]="false"
     ></app-content-box>
+    <app-content-box
+      [imageName]="'Divine Gate'"
+      [imageUrl]="'/DivineGate.png'"
+      [text1]="
+        'In Edenstep, the boundary between the mortal and the divine is but a whisper, easily crossed by those chosen by fate.'
+      "
+      [text2]="
+        ' Temples built in ages past still hum with celestial power, their halls echoing with the voices of long-forgotten deities.'
+      "
+      [text3]="
+        ' Every storm, every harvest, every war is a thread in the great tapestry woven by unseen hands.'
+      "
+      [reverseOrder]="true"
+    >
+    </app-content-box>
+    <app-content-box
+      [imageName]="'Sovereign Winds'"
+      [imageUrl]="'/Dawn.jpg'"
+      [text1]="
+        ' The winds of Edenstep carry more than just the scent of rain; they bear the voices of ancient spirits who once shaped the world.'
+      "
+      [text2]="
+        ' Shrines older than memory stand unbroken, their stones imbued with a power that defies time itself.'
+      "
+      [text3]="
+        'In this land, destiny is not a matter of chance, but a force written in the stars long before humans were born'
+      "
+      [reverseOrder]="false"
+    >
+    </app-content-box>
   </div>
 </div>

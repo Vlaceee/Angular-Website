@@ -12,6 +12,7 @@ import { signal } from '@angular/core';
 })
 export class ContentBoxComponent {
   @Input() imageUrl: string = ''; // Input for the image URL
+  @Input() imageName: string = '';
   @Input() text1: string = '';
   @Input() text2: string = '';
   @Input() text3: string = '';

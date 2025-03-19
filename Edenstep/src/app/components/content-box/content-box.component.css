@@ -1,10 +1,11 @@
 :host {
   display: block;
   width: 80%;
-  height: 280px;
+  min-height: 280px;
   background-color: var(--beige2);
   border: 1px solid black;
   border-radius: 25px;
+  margin-bottom: 24px;
 }
 
 .content-div {
@@ -30,6 +31,7 @@
   margin: none;
   width: 55%;
   min-width: 120px;
+
   height: 80%;
 
   border: none;
@@ -41,13 +43,30 @@
 }
 
 .content-box {
+  position: relative;
   margin-left: 16px;
   border: 1px solid black;
   border-radius: 10px;
   margin: 0px;
 
   width: 35%;
+
   height: 85%;
   background: url("/GodsOversee.jpg") no-repeat center center;
   background-size: 100% 100%;
+  transition: filter 0.15s ease-in-out;
+}
+
+.content-box:hover {
+  filter: brightness(85%); /* Darkens the background image */
+}
+
+.hover-tooltip {
+  text-align: center;
+  background-color: aliceblue;
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  font-family: Roboto;
+  font-weight: 500;
 }

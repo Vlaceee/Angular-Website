@@ -18,8 +18,8 @@
   height: 100%;
   border-radius: 25px;
   transition: transform 1s ease-out, opacity 1s ease-out; /* Add transition effects */
-  transform: translateX(50px); /* Start from 50px to the right */
-  opacity: 0; /* Start with opacity 0 */
+  /* transform: translateX(50px);  Start from 50px to the right */
+  /* opacity: 0; /* Start with opacity 0 */
 }
 
 .content-div.visible {

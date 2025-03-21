@@ -37,7 +37,7 @@ export class ContentBoxComponent {
       (entries) => {
         entries.forEach((entry) => {
           // Set isVisible to true if more than 50% of the element is visible
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
             this.isVisible = true;
             console.log(`${this.imageName} is more than half visible`);
           } else {

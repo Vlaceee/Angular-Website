@@ -71,6 +71,7 @@
 }
 
 .main-title {
+  -webkit-text-stroke: 0.2px black;
   font-family: serif;
   font-weight: 600;
   font-size: clamp(1.6em, 30px, 3.2em);

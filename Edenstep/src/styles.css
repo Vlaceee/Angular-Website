@@ -1,27 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --orange: #ff9671;
-    --beige: #fff5ee;
-    --beige2: #ffe6e6;
-    --plava: #86A8E7;
-    --purple: #8400ff;
-    --darkblue: #090979;
-    --prettyblue: #28738a;
-    --menubackground: #bac0c2;
-    --lavander: #c5beed;
+  --orange: #ff9671;
+  --beige: #fff5ee;
+  --beige2: #ffe6e6;
+  --plava: #86a8e7;
+  --purple: #8400ff;
+  --darkblue: #090979;
+  --prettyblue: #28738a;
+  --menubackground: #bac0c2;
+  --lavander: #c5beed;
+  --darkgold: #635f3e;
+  --gold: rgb(211, 184, 116);
 }
-*{
-    outline: none;
-}
-
-body{
-    margin:0px;
-    padding:0px;
-    background-color: beige;
+* {
+  outline: none;
 }
 
-div{
-    margin:0px;
-    padding:0px;
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: beige;
 }
 
+div {
+  margin: 0px;
+  padding: 0px;
+}

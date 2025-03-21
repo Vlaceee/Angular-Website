@@ -1,10 +1,17 @@
-<div class="content-div" [ngClass]="reverseOrder ? 'column-reverse' : ''">
-  <div
+<div
+  id="content-div-{{ imageName }}"
+  class="content-div"
+  [ngClass]="{
+    visible: isVisible,
+    'column-reverse': reverseOrder
+  }"
+>
+  <button
     class="content-box"
     [style]="{ 'background-image': 'url(' + imageUrl + ')' }"
   >
     <div class="hover-tooltip">{{ imageName }}</div>
-  </div>
+  </button>
   <div class="text-box">
     <p>&#176; {{ text1 }}</p>
 

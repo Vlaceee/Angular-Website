@@ -18,8 +18,11 @@ export class ContentBoxComponent {
   @Input() text3: string = '';
   @Input() reverseOrder: boolean = false;
 
+  private observer!: IntersectionObserver;
+  public isVisible: boolean = false; // To track visibility status
+
   constructor() {
-    console.log('it is made!');
+    console.log('ContentBoxComponent is created!');
   }
 
   ngOnInit(): void {
@@ -28,5 +31,37 @@ export class ContentBoxComponent {
     console.log('text1:', this.text1);
     console.log('text2:', this.text2);
     console.log('text3:', this.text3);
+
+    // Initialize IntersectionObserver
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // Set isVisible to true if more than 50% of the element is visible
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
+            this.isVisible = true;
+            console.log(`${this.imageName} is more than half visible`);
+          } else {
+            this.isVisible = false;
+            console.log(`${this.imageName} is less than half visible`);
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of the element is visible
+      }
+    );
+
+    // Start observing the current element
+    const element = document.querySelector(`#content-div-${this.imageName}`); // Updated query selector
+    if (element) {
+      this.observer.observe(element);
+    }
+  }
+
+  ngOnDestroy(): void {
+    // Clean up observer when the component is destroyed
+    if (this.observer) {
+      this.observer.disconnect();
+    }
   }
 }
